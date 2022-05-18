@@ -1,0 +1,682 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background: url('../Images/Fondo.jpg');
+  background-size: 150%;
+  background-color: #fff;
+}
+/** HEADER **/
+#header-nav {
+  background-color: #3f52d8;
+  border-radius: 0;
+  border: 0;
+}
+#logo-img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 15px 10px 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { 
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: .75;
+  letter-spacing: 5px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 25px;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+  margin:2px;
+  font-size: 1.1em;
+}
+#nav-list a:hover {
+  background: #ffc000;
+  color: #3f52d8;
+  width: auto;
+  height: auto;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #fff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #3f52d8;
+  background-color: #ffc000;
+}
+/* FIN HEADER */
+/*CARRUSEL*/
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: cambio 20s infinite alternate linear;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 100%;
+}
+.letras{
+  color: #000;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  28.3%{margin-left: 0;}
+
+  33.3%{margin-left: -100%;}
+  61.63%{margin-left: -100%;}
+
+  66.63%{margin-left: -200%;}
+  99.37%{margin-left: -200%;}
+}
+/*FIN CARRUSEL */
+/*FOOTER*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: rgba(34, 34, 34, 0.774);
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#sugerencias, #creadores {
+  line-height: 2;
+}
+#sugerencias > span, #creadores > span {
+  font-size: 1.3em;
+}
+#creadores a {
+  color: #ffc000;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonios {
+  font-style: italic;
+}
+#testimonios p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+ /*REGISTRO*/
+ .formulario {
+  background-color: #3f51d8e1; ;
+  padding: 3px;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.contenedor {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.titulo-form{
+  text-align: center;
+  color:white;
+  font-size: 35px;
+}
+input[type="text"], input[type="password"], .genero, .ciudad{
+  font-size: 15px;
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+input[type="email"], input[type="number"], .dominios, .area{
+  font-size: 15px;
+  width: 37.5%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.input-contenedor{
+  margin-bottom: 10px;
+  color: #000;
+}
+.button{
+  border: none;
+  width: 70%;
+  color: #3f52d8;
+  font-size: 20px;
+  background-color:#ffc000;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background: white;
+  color:#3f52d8;
+}
+.term{
+  margin-top: 8px;
+  text-align: center;
+}
+.link{
+  text-decoration: none;
+  color: #ffc000;
+  font-weight: 600;
+}
+.link:hover{
+  color: white;
+}
+/*FIN-FORMULARIO*/
+ /*TABLA PERIODICA*/
+ table.tabla {
+  margin-top: 60px;
+  background-color:#3f51d8d3; 
+  font-size: auto;
+  border: none;
+  border-color: gray;
+  height:auto;
+  width: 90%;
+}
+td {
+  padding: 5px;
+  width: 5px;
+}
+td.periodo{
+  background-color: #ff455e;
+  font-weight: bold;
+  text-align: center;
+}
+td.grupo{
+  background-color: #ff455e;
+  font-weight: bold;
+}
+td.Nometal{
+  background-color: #8C6C61;
+}
+.Nometal:hover{
+ background-color:  #855242;	
+}
+td.gases{
+  background-color: #37FF40;
+}
+.gases:hover{
+ background-color:#3f9243;	
+}
+td.alcalinos{
+  background-color: #C176DF;
+}
+.alcalinos:hover{
+  background-color:#9d62b4;
+}
+td.alcalinosterreos{
+  background-color: #F0952E;
+}
+.alcalinosterreos:hover{
+  background-color: #ffc583;
+}
+td.metales{
+  background-color: #2F7AFD;
+}
+.metales:hover{
+  background-color: #5276b4;
+}
+.espacio{
+  border: none;
+}
+.alcalinos:hover, .alcalinosterreos:hover, .metales:hover, .gases:hover, .Nometal:hover{
+  transform: scale(1.5);
+  border-radius: 5px;
+}
+/*LEYENDA*/
+.cuadro-metal{
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color:#2F7AFD;
+  border: 2px solid black;
+}
+.cuadro-nometal{
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color:#8C6C61;
+  border: 2px solid black;
+}
+.cuadro-at{
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color:#F0952E;
+  border: 2px solid black;
+}
+.cuadro-a{
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color:#C176DF;
+  border: 2px solid black;
+}
+.cuadro-gases{
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color:#37FF40;
+  border: 2px solid black;  
+}
+.leyenda li:hover{
+  color: #ffc000;
+}
+.leyenda{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+.leyenda li{
+  display: inline;
+  padding-left:10px;
+  padding-right:10px;
+  margin:.5%;
+  margin-top: 20px;
+}
+.leyenda ul{
+  background-color: #3f51d8d3;
+  color: #fff;
+  margin:auto;
+  width: 60%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 20px;
+}
+/*FIN LEYENDA*/
+/*FIN TABLA PERIODICA*/
+/*TITULOS DE SECCIONES*/
+#titulo-contenido{
+  background: url('../Images/teoria-pagina.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#titulo-contenido span, #titulo-contenido2 span, #titulo-contenido3 span{
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #ffc000;
+  background-color: #000;
+  opacity: .8;
+}
+#contenido{
+  background-color: #3f51d8d5;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#contenido span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #ffc000;
+  background-color: #000;
+  opacity: .8;
+}
+/*FIN DE TITULO DE SECCIONES*/
+/*FORMULAS*/
+.texto-seccion{
+  margin-top: 20%;
+}
+#imagen-seccion, #imagen-seccion1{
+  margin-top: 10%;
+  background-color: #2D572C;
+  background-size:cover;
+  height: 200px;
+  width: 100%;
+  border: 10px solid #7c5a39 ;
+}
+#imagen-seccion p{
+  position: relative;
+  top: 18%;
+  text-align: center;
+  font-size: 1em;
+}
+#imagen-seccion1 p{
+  position: relative;
+  top: 15%;
+  text-align: center;
+  font-size: 1em;
+}
+/*FIN FORMULAS*/
+/*TEORIA*/
+#titulo-contenido2{
+  background: url('../Images/formula-pagina.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.panel-group {
+  text-align: justify;
+  margin: auto;
+  width: 83%;
+}
+.panel-default {
+  margin-top: 15px;
+  clear: both;
+}
+.panel-default>.panel-heading {
+  text-align: center;
+  color: #ffc000;
+  background-color: #3f52d8;
+}
+.panel-title a{
+  text-decoration: none;
+  font-size: 1.3em;
+}
+.panel-body{
+  color:#000;
+}
+.hr-color{
+  border-top: 2px solid #3f52d8;
+}
+#imagen{
+  width: 100%;
+}
+/*FIN DE TEORIA*/
+/*EJEMPLOS*/
+#titulo-contenido3{
+  background: url('../Images/ejemplo-pagina.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#ejemplo-1{
+background: url('../Images/ejemplos.jpg') no-repeat;
+width: 70%;
+margin: auto;
+margin-top: 6%;
+height: 200px;
+background-size: cover;
+}
+#ejemplo-2{
+  background: url('../Images/ejemplos.jpg') no-repeat;
+  width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  height: 200px;
+  background-size: cover;
+}
+#ejemplo-3{
+  background: url('../Images/ejemplos.jpg') no-repeat;
+  width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  height: 200px;
+  background-size: cover;
+}
+#ejemplo-4{
+  background: url('../Images/ejemplos.jpg') no-repeat;
+  width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  height: 200px;
+  background-size: cover;
+}
+#ejemplo-5{
+  background: url('../Images/ejemplos.jpg') no-repeat;
+  width: 70%;
+  margin: auto;
+  margin-top: 6%;
+  height: 200px;
+  background-size: cover;
+}
+/*FIN EJEMPLOS*/
+/*SECCIONES*/
+#formulas{
+  background: url('../Images/formulas.jpg') no-repeat;
+  background-position: center;
+}
+#teoria{
+  background: url('../Images/teoria.jpg') no-repeat;
+  background-position: center;
+}
+#ejemplos{
+  background: url('../Images/ejemplos.jpg') no-repeat;
+  background-position: center;
+}
+#formulas, #teoria, #ejemplos{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f52d8;
+  overflow: hidden;
+}
+#formulas:hover , #teoria:hover , #ejemplos:hover {
+  box-shadow: 0 2px 6px 2px #ffc000;
+}
+#formulas span, #teoria span, #ejemplos span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/********** PANTALLAS GRANDES **********/
+@media (min-width: 1200px) {
+  .slider{
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+}
+
+/********** PANTALLAS MEDIANAS **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../Images/Logot.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 5px 5px 5px 0;
+  }
+  .slider{
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+  /* Fin Header */
+  .navbar-brand h1 { 
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: .75;
+    letter-spacing: 5px;
+  }
+    /*TABLA PERIODICA*/
+  table.tabla {
+    margin-top: 65px;
+    background-color:#3f51d8d3; 
+    font-size: auto;
+    border: none;
+    border-color: gray;
+    height:auto;
+    width: auto;
+  }
+  td {
+    padding: 5px;
+    width: 50px;
+  }
+  /*FIN TABLA PERIODICA*/
+  #imagen-seccion, #imagen-seccion1{
+    margin-top: 15%;
+    background-color: #2D572C;
+    background-size:cover;
+    height: 180px;
+    width: 100%;
+    border: 10px solid #7c5a39 ;
+  }
+  .texto-seccion{
+    margin-top: 30%;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  #logo-img {
+    background: url('../Images/Logot.png') no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1 { 
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: .75;
+    letter-spacing: 5px;
+  }
+  .alcalinos:hover, .alcalinosterreos:hover, .metales:hover, .gases:hover, .Nometal:hover{
+    transform: scale(2.0);
+    border-radius: 5px;
+  }
+  #ejemplos {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  #imagen-seccion, #imagen-seccion1{
+    margin-top: 20%;
+    background-color: #2D572C;
+    background-size:cover;
+    height: 160px;
+    width: 100%;
+    border: 10px solid #7c5a39 ;
+  }
+  .texto-seccion{
+    margin-top: 40%;
+  }
+}
+
+/********** PANTALLAS EXTRA PEQUEÑAS **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Nombre */
+    padding-top: 10px;
+    font-size: 6.5vw; 
+  }
+  #collapsable-nav a { 
+    font-size: 1.2em;
+  }
+  /* Fin Header */
+  table.tabla {
+    margin-top: 65px;
+    background-color:#3f51d8d3; 
+    font-size:35%;
+    border: none;
+    border-color: gray;
+    height:auto;
+    width: 90%;
+  }
+  .leyenda{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .leyenda li{
+    display: inline;
+    font-size: 70%;
+    padding-left:10px;
+    padding-right:10px;
+    margin:.5%;
+    margin-top: 20px;
+  }
+  .alcalinos:hover, .alcalinosterreos:hover, .metales:hover, .gases:hover, .Nometal:hover{
+    transform: scale(2.0);
+    border-radius: 5px;
+  }
+  .formulario {
+    background-color: #3f51d8e1;
+    padding: 3px;
+    width: 80%;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 8px;
+  }
+  #formulas, #teoria, #ejemplos {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  #imagen-seccion, #imagen-seccion1{
+    margin-top: 20%;
+    background-color: #2D572C;
+    background-size:cover;
+    height: 150px;
+    width: 100%;
+    border: 10px solid #7c5a39 ;
+  }
+  .texto-seccion{
+    margin-top: 50%;
+  }
+}
