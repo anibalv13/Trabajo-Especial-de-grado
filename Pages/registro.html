@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/favico.ico"> </link>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../index.html" class="pull-left visible-md visible-lg">
+            <img id="logo-img" src="../Images/Logot.png"></img>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="../index.html"><h1>Chrisbal</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="TablaPeriodicaSimbolos.html">Tabla peri&oacute;dica</a>
+            </li>
+            <li class="active">
+              <a href="iniciarsesion.html">Iniciar Sesi&oacute;n</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section> 
+    <form action="../php/registro.php" method="post" name="registro" id="registro" class="formulario" onsubmit="return validar();">
+        <h1 class="titulo-form">Registrate</h1>
+        <div class="contenedor">
+          <div id="alerta"></div>
+            <div class="input-contenedor">
+              <input type="text" id="name" name="nombre" placeholder="Nombre Completo">   
+            </div>
+            <div class="input-contenedor">
+              <input type="text" id="usuario" name="usuario" placeholder="Usuario">   
+            </div>
+            <div class="input-contenedor">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <select class="dominios" name="dominios" id="dominios">
+                  <option value="">Indique su dominio</option>
+                  <option value="@gmail.com"> @gmail.com</option>
+                  <option value="@hotmail.com"> @hotmail.com</option>
+                  <option value="@outlook.com">@outlook.com</option>
+                </select>   
+            </div>
+            <div class="input-contenedor">
+              <select class="area" name="area" id="area">
+                <option value="">Indique c&oacute;digo</option>
+                <option value="0412">0412</option>
+                <option value="0414">0414</option>
+                <option value="0424">0424</option>
+                <option value="0416">0416</option>
+                <option value="0426">0426</option>
+              </select>
+              <input type="number" id="telefono" name="telefono" maxlength="11" placeholder="N&uacute;mero de contacto">   
+            </div>
+            <div class="input-contenedor"> 
+              <select class="genero" name="genero" id="genero">
+                <option value="">Indique su g&eacute;nero</option>
+                <option value="Masculino"> Masculino</option>
+                <option value="Femenino"> Femenino</option>
+                <option value="Otro"> Otro</option>
+              </select>
+            </div>
+            <div class="input-contenedor"> 
+              <select class="ciudad"  name="ciudad" id="ciudad">
+                <option value="">Indique su ciudad</option>
+                <option value="Los Teques"> Los Teques</option>
+                <option value="Carrizal"> Carrizal</option>
+                <option value="San Antonio"> San Antonio</option>
+              </select>
+            </div>
+            <div class="input-contenedor">
+                <input type="text" id="direccion" name="direccion" placeholder="Direcci&oacute;n">   
+            </div>
+            <div class="input-contenedor">
+                <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña (M&iacute;nimo 6 caractares)">   
+            </div>
+            <div class="input-contenedor">
+              <input type="password" id="contrasenia2" name="contrasenia2" placeholder="Confirmar Contraseña (M&iacute;nimo 6 caractares)">   
+            </div>
+            <input type="button" value="Registrate" onclick="validar();" class="button">
+            <p class="term"> Al registrarte, aceptas nuestras condiciones de uso y Políticas de privadcidad</p>
+            <p class="term">¿Ya tienes cuenta? <a class="link" href="iniciarsesion.html">Inciar Sesion</a></p>
+        </div>
+    </form>
+  </section>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="sugerencias" class="col-sm-4">
+          <span>Buz&oacute;n de sugerencias</span><br>
+          <textarea placeholder="Escribe aqu&iacute; tu sugerencia "></textarea>
+          <hr class="visible-xs">
+        </section>
+        <section id="creadores" class="col-sm-4">
+          <span>Creadores</span><br>
+          Christian Wilhelm <br>
+          <a>WilhelmchristianCj2@gmail.com</a><br>
+          Anibal Vielma <br>
+          <a>Asenciovd@gmail.com</a>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonios" class="col-sm-4">
+          <p>"Aprender desde Chrisbal es divertido"</p>
+          <p>"Innovemos el sistema educativo con Chrisbal"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Chrisbal 2021</div>
+    </div>
+  </footer>
+      <script src="../js/jquery-2.1.4.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/script.js"></script>
+    </body>
+</html>
